@@ -111,8 +111,8 @@ def tempartureobs():
         all_temperature.append(tobs_dict)
     return jsonify(all_temperature)
 
-# This function called `calc_temps` will accept start date and end date in the format '%Y-%m-%d' 
-# and return the minimum, average, and maximum temperatures for that range of dates
+
+# and return the minimum, average, and maximum temperatures
 @app.route("/api/v1.0/<start>/<end>")
 def calc_temps(start, end):
     # Create our session (link) from Python to the DB
